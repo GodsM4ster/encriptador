@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montserrat:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header-principal">
+        <section class="container">
+            <h1 class="header-title">Encriptador de texto</h1>
+            <div class="header-redes-logos">
+                <nav class="header-redes-logos-nav">
+                    <ul class="header-redes-logos-nav-link">
+                        <li><a href="https://www.linkedin.com/in/edwin-marin-181370248/" ><img src="assets/linkedin-logo.png" alt="logo linkedin" class="headerPrincipal-nav-link-items"></a></li>
+                        <li><a href="https://github.com/GodsM4ster" ><img src="assets/github.png" alt="logo github" class="headerPrincipal-nav-link-items"></a></li>
+                        <li><a href="https://www.instagram.com/bamahue/" ><img src="assets/instagram1.png" alt="logo instagram" class="headerPrincipal-nav-link-items"></a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="contexto">
+        <section class="text1">
+            <div class="text-area">
+                <textarea class="texto-ingresado" cols="40" rows="6" placeholder="Ingrese texto aquí"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button class="button-encriptar" onclick="botonencriptar()">Encriptar</button>
+                <button class="button-desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="text2">
+            <div class="text-area2">
+                <textarea class="texto-encriptado" cols="40" rows="6" placeholder="No se ha encontrado ningún texto"></textarea>          
+            </div>   
+        
+            <div>
+                <button class="button-copy" onclick="copiar()">Copiar</button>
+            </div>                   
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer-principal">
+            <div class="logo">
+                <img class="logo-personal" src="assets/godsm4ster.png">
+            </div>
+            <div class="text">
+                <p class="copy-right">
+                    &copy By GodsM4ster 2022
+                </p>
+            </div>
+        </section>
+    </footer> 
+    <script src="javascript/config.js"></script>      
+</body>
+
+</html>

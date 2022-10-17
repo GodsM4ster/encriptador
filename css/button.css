@@ -1,0 +1,35 @@
+.button-encriptar, .button-desencriptar, .button-copy{
+    padding: 0.5em 1em;
+    border: 2px solid #11eee7;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #11eee7;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button-encriptar::before, .button-desencriptar::before, .button-copy::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #11eee7;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.button-encriptar:hover::before, .button-desencriptar:hover::before, .button-copy:hover::before {
+    width: 105%;
+}
+.button-encriptar:hover, .button-desencriptar:hover, .button-copy:hover {
+    color: #111;
+}
